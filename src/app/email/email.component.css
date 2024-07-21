@@ -1,0 +1,30 @@
+.inputBox1
+{
+    width: 100%;
+}
+.card
+{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.conatiner
+{
+    margin-top: 50px;
+}
+#head1
+{
+    text-align: center;
+}
+.text-center
+{
+    text-align: center;
+  
+    
+}
+.card button
+{
+    margin: 10px;
+}

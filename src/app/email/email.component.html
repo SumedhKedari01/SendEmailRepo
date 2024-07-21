@@ -1,0 +1,29 @@
+<div class="conatiner">
+    <div class="card">
+        <form (ngSubmit)="doSubmit()">
+            <h1 id="head1">Compresed Email</h1>
+      
+        <mat-form-field class="inputBox1">
+            <mat-label>To</mat-label>
+            <input name="to" [(ngModel)]="data.to" matInput>
+          </mat-form-field>
+          <br>
+          <mat-form-field class="inputBox1">
+            <mat-label>Subject</mat-label>
+            <input name="to" [(ngModel)]="data.subject" matInput>
+          </mat-form-field>
+          <br>
+          <mat-form-field class="example-full-width inputBox1">
+            <mat-label>Body</mat-label>
+            <textarea matInput placeholder="Notes only" rows="20" name="to" [(ngModel)]="data.body"></textarea>
+          </mat-form-field>
+          <div class="text-center">
+
+            <button  type ="submit" mat-raised-button color="primary">Basic</button>
+            <button  type ="reset" mat-raised-button color="accent">Reset</button>
+
+          </div>
+         {{data | json}}
+        </form>
+    </div>
+</div>
